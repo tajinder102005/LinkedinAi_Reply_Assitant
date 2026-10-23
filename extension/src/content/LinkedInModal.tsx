@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { generateOutreach, OutreachResponse, DraftVariation } from '../services/api';
 import { insertTextIntoLinkedInComposer, findLinkedInMessageComposer } from './linkedinHelper';
 import { AISettingsCard } from '../components/AISettingsCard';
+import { SupportCard } from '../components/SupportCard';
 
 interface LinkedInModalProps {
   recipientName: string;
@@ -26,6 +27,7 @@ export const LinkedInModal: React.FC<LinkedInModalProps> = ({
   const [userNotes, setUserNotes] = useState<string>('');
   const [useMock, setUseMock] = useState<boolean>(false);
   const [showSettings, setShowSettings] = useState<boolean>(false);
+  const [showSupport, setShowSupport] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const [response, setResponse] = useState<OutreachResponse | null>(null);
@@ -181,6 +183,15 @@ export const LinkedInModal: React.FC<LinkedInModalProps> = ({
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <button
               type="button"
+              className="lk-settings-toggle-btn"
+              onClick={() => setShowSupport(!showSupport)}
+              title="Support the Developer with Love"
+              style={{ color: '#db2777', borderColor: '#fbcfe8', background: '#fdf2f8' }}
+            >
+              💖 <span>Support</span>
+            </button>
+            <button
+              type="button"
               className={`lk-settings-toggle-btn ${showSettings ? 'active' : ''}`}
               onClick={() => setShowSettings(!showSettings)}
               title="AI Provider & API Key Settings"
@@ -197,6 +208,7 @@ export const LinkedInModal: React.FC<LinkedInModalProps> = ({
 
         {/* Modal Body */}
         <div className="lk-modal-body">
+          {showSupport && <SupportCard onClose={() => setShowSupport(false)} />}
           {showSettings && (
             <AISettingsCard onClose={() => setShowSettings(false)} onKeySaved={() => setError(null)} />
           )}

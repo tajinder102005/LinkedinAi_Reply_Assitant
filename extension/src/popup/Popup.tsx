@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { checkBackendHealth, generateOutreach, OutreachResponse, DraftVariation } from '../services/api';
 import { AISettingsCard } from '../components/AISettingsCard';
+import { SupportCard } from '../components/SupportCard';
 import './popup.css';
 
 export const Popup: React.FC = () => {
@@ -19,6 +20,7 @@ export const Popup: React.FC = () => {
   const [intentMode, setIntentMode] = useState<string>('referral');
   const [useMock, setUseMock] = useState<boolean>(false);
   const [showSettings, setShowSettings] = useState<boolean>(false);
+  const [showSupport, setShowSupport] = useState<boolean>(false);
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [response, setResponse] = useState<OutreachResponse | null>(null);
@@ -514,6 +516,19 @@ export const Popup: React.FC = () => {
       <div className="popup-footer">
         Look for the blue <strong>AI Reply</strong> button right inside the chat box or on profile pages.
       </div>
+
+      {/* Support Developer with Love */}
+      <div className="popup-support-row">
+        <button
+          type="button"
+          className="popup-support-link-btn"
+          onClick={() => setShowSupport(true)}
+        >
+          💖 Support the Developer with Love
+        </button>
+      </div>
+
+      {showSupport && <SupportCard onClose={() => setShowSupport(false)} />}
     </div>
   );
 };

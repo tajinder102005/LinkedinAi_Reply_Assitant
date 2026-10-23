@@ -103,5 +103,31 @@ The backend starts on port `8085` with endpoints:
 
 ---
 
+## 💖 Support the Developer
+
+If this extension helped you save time, land an interview referral, or close a client on LinkedIn, consider supporting future development and maintenance!
+
+<div align="center">
+
+### Option 1: 🇮🇳 India (UPI / PhonePe / Google Pay / Navi / Paytm)
+Scan with any UPI app:
+
+<img src="./extension/public/phone_pay_recieve_money.png" width="220" alt="Scan & Pay via PhonePe / UPI" style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" />
+
+*Supports PhonePe, Google Pay, Navi, Paytm, Cred & BHIM*
+
+<br/>
+
+### Option 2: 🌍 International / Cards (Buy Me a Coffee)
+For international supporters, debit/credit cards, Apple Pay, and PayPal:
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/tajinder102005)
+
+**Direct Link:** [buymeacoffee.com/tajinder102005](https://buymeacoffee.com/tajinder102005)
+
+</div>
+
+---
+
 ## 📄 License
 MIT License. Feel free to use, modify, and distribute!
