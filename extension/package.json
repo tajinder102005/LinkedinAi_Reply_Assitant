@@ -1,0 +1,21 @@
+{
+  "name": "linkedin-ai-outreach-extension",
+  "version": "1.0.0",
+  "description": "Smart AI Reply & Verified Personalization Outreach Assistant for LinkedIn",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && node scripts/build.js"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.268",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.2"
+  }
+}

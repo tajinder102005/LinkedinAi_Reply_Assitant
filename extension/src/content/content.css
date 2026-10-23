@@ -1,0 +1,761 @@
+/* LinkedIn Injected Button */
+.linkedin-ai-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  height: 32px !important;
+  padding: 0 14px !important;
+  margin-right: 8px !important;
+  margin-left: 4px !important;
+  background-color: #0a66c2 !important;
+  color: #ffffff !important;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  border-radius: 16px !important;
+  border: none !important;
+  cursor: pointer !important;
+  user-select: none !important;
+  transition: background-color 0.15s ease, transform 0.05s ease !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15) !important;
+  z-index: 10 !important;
+  vertical-align: middle !important;
+}
+
+.linkedin-ai-btn:hover {
+  background-color: #004182 !important;
+}
+
+.linkedin-ai-btn:active {
+  transform: scale(0.97) !important;
+}
+
+.linkedin-ai-btn svg {
+  width: 14px !important;
+  height: 14px !important;
+  fill: currentColor !important;
+}
+
+.linkedin-ai-topbar-btn {
+  height: 28px !important;
+  padding: 0 10px !important;
+  font-size: 12px !important;
+  border-radius: 14px !important;
+}
+
+.linkedin-ai-btn-send {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5px !important;
+  height: 28px !important;
+  padding: 0 10px !important;
+  margin-right: 6px !important;
+  margin-left: 2px !important;
+  background: linear-gradient(135deg, #0a66c2 0%, #004182 100%) !important;
+  color: #ffffff !important;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  border-radius: 14px !important;
+  border: none !important;
+  cursor: pointer !important;
+  user-select: none !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+  transition: all 0.2s ease !important;
+  z-index: 99 !important;
+  vertical-align: middle !important;
+}
+
+.linkedin-ai-btn-send:hover {
+  background: linear-gradient(135deg, #004182 0%, #002952 100%) !important;
+  box-shadow: 0 2px 6px rgba(10, 102, 194, 0.4) !important;
+  transform: translateY(-1px) !important;
+}
+
+.linkedin-ai-btn-send:active {
+  transform: translateY(0) scale(0.97) !important;
+}
+
+.linkedin-ai-btn-send svg {
+  width: 14px !important;
+  height: 14px !important;
+  fill: currentColor !important;
+}
+
+/* Ensure LinkedIn right-actions and footer flex layout shows our button nicely */
+.msg-form__right-actions, .msg-form__footer-actions, .msg-form__footer {
+  display: flex !important;
+  align-items: center !important;
+  overflow: visible !important;
+}
+
+/* Floating AI Trigger directly inside the Message Box (Always visible even if footer is collapsed) */
+.linkedin-ai-composer-trigger {
+  position: absolute !important;
+  right: 28px !important;
+  bottom: 8px !important;
+  z-index: 9999 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  height: 24px !important;
+  padding: 0 9px !important;
+  background-color: #0a66c2 !important;
+  color: #ffffff !important;
+  border-radius: 12px !important;
+  border: none !important;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25) !important;
+  transition: all 0.15s ease !important;
+  user-select: none !important;
+}
+
+.linkedin-ai-composer-trigger:hover {
+  background-color: #004182 !important;
+  transform: scale(1.05) !important;
+}
+
+.linkedin-ai-composer-trigger svg {
+  width: 12px !important;
+  height: 12px !important;
+  fill: currentColor !important;
+}
+
+/* Injected Button on Profile Page next to Message button */
+.linkedin-ai-profile-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  vertical-align: middle !important;
+  align-self: center !important;
+  gap: 5px !important;
+  height: 32px !important;
+  min-height: 32px !important;
+  padding: 0 13px !important;
+  margin-left: 6px !important;
+  margin-right: 6px !important;
+  line-height: 1 !important;
+  box-sizing: border-box !important;
+  background-color: #0a66c2 !important;
+  color: #ffffff !important;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  border-radius: 16px !important;
+  border: none !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+  transition: background-color 0.15s ease, transform 0.05s ease !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) !important;
+  z-index: 10 !important;
+}
+
+.linkedin-ai-profile-btn:hover {
+  background-color: #004182 !important;
+}
+
+.linkedin-ai-profile-btn:active {
+  transform: scale(0.97) !important;
+}
+
+.linkedin-ai-profile-btn svg {
+  width: 14px !important;
+  height: 14px !important;
+  fill: currentColor !important;
+}
+
+/* Guarantee exact straight-line flex alignment for profile action bar */
+.pvs-profile-actions,
+.pv-top-card-v2-ctas,
+div.ph5.pb5 .display-flex,
+div[class*="profile-actions"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  vertical-align: middle !important;
+}
+
+/* Modal Backdrop */
+.lk-modal-backdrop {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 9999999 !important;
+  backdrop-filter: blur(2px) !important;
+  animation: lkFadeIn 0.15s ease-out !important;
+}
+
+@keyframes lkFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Modal Window */
+.lk-modal-container {
+  width: 620px !important;
+  max-width: 92vw !important;
+  max-height: 88vh !important;
+  background-color: #ffffff !important;
+  border-radius: 14px !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+  color: #191919 !important;
+  border: 1px solid #e0e0e0 !important;
+}
+
+/* Modal Header */
+.lk-modal-header {
+  padding: 14px 20px !important;
+  border-bottom: 1px solid #e9e9e9 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background: #f8fafd !important;
+}
+
+.lk-header-left {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+.lk-logo-badge {
+  background: #0a66c2 !important;
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  font-size: 13px !important;
+  padding: 4px 8px !important;
+  border-radius: 6px !important;
+  letter-spacing: 0.5px !important;
+}
+
+.lk-title {
+  margin: 0 !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: #191919 !important;
+}
+
+.lk-subtitle {
+  font-size: 12px !important;
+  color: #666666 !important;
+}
+
+.lk-settings-toggle-btn {
+  background: #f0f4f9 !important;
+  border: 1px solid #cfd3d8 !important;
+  color: #191919 !important;
+  border-radius: 14px !important;
+  padding: 4px 10px !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.15s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+}
+
+.lk-settings-toggle-btn:hover {
+  background: #e2ecf7 !important;
+  border-color: #0a66c2 !important;
+  color: #0a66c2 !important;
+}
+
+.lk-settings-toggle-btn.active {
+  background: #0a66c2 !important;
+  color: #ffffff !important;
+  border-color: #0a66c2 !important;
+}
+
+.lk-close-btn {
+  background: none !important;
+  border: none !important;
+  color: #666666 !important;
+  font-size: 16px !important;
+  cursor: pointer !important;
+  padding: 4px 8px !important;
+  border-radius: 50% !important;
+  transition: background-color 0.15s !important;
+}
+
+.lk-close-btn:hover {
+  background-color: #eaeaea !important;
+  color: #191919 !important;
+}
+
+/* Modal Body */
+.lk-modal-body {
+  padding: 14px 18px !important;
+  overflow-y: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+.lk-field-group {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 4px !important;
+}
+
+.lk-field-header-row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.lk-field-label {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #444444 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.3px !important;
+}
+
+.lk-field-hint {
+  font-size: 10.5px !important;
+  color: #777777 !important;
+}
+
+/* Playbook Pills */
+.lk-pill-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 6px !important;
+  margin-top: 1px !important;
+}
+
+.lk-filter-pill {
+  padding: 3px 10px !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  border-radius: 12px !important;
+  border: 1px solid #cfd3d8 !important;
+  background-color: #ffffff !important;
+  color: #191919 !important;
+  cursor: pointer !important;
+  transition: all 0.15s ease !important;
+  user-select: none !important;
+}
+
+.lk-filter-pill:hover {
+  background-color: #f3f6f8 !important;
+  border-color: #0a66c2 !important;
+  color: #0a66c2 !important;
+}
+
+.lk-filter-pill.active {
+  background-color: #edf3f8 !important;
+  border-color: #0a66c2 !important;
+  color: #0a66c2 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 0 0 1px #0a66c2 !important;
+}
+
+.lk-length-indicator {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #0a66c2 !important;
+}
+
+.lk-playbook-pills {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 6px !important;
+}
+
+.lk-playbook-pill {
+  flex: 1 1 calc(50% - 6px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 5px 10px !important;
+  border-radius: 6px !important;
+  border: 1px solid #cfd3d8 !important;
+  background-color: #ffffff !important;
+  cursor: pointer !important;
+  text-align: left !important;
+  transition: all 0.15s ease !important;
+}
+
+.lk-playbook-pill:hover {
+  background-color: #f3f6f8 !important;
+  border-color: #0a66c2 !important;
+}
+
+.lk-playbook-pill.active {
+  background-color: #edf3f8 !important;
+  border-color: #0a66c2 !important;
+  box-shadow: 0 0 0 1px #0a66c2 !important;
+}
+
+.pill-name {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: #191919 !important;
+}
+
+.pill-desc {
+  font-size: 10px !important;
+  color: #666666 !important;
+  margin-top: 1px !important;
+}
+
+/* Expandable Textarea */
+.lk-textarea {
+  width: 100% !important;
+  min-height: 110px !important;
+  max-height: 220px !important;
+  padding: 8px 10px !important;
+  border: 1px solid #cfd3d8 !important;
+  border-radius: 8px !important;
+  font-size: 12.5px !important;
+  font-family: inherit !important;
+  color: #191919 !important;
+  line-height: 1.45 !important;
+  outline: none !important;
+  box-sizing: border-box !important;
+  resize: vertical !important;
+  white-space: pre-wrap !important;
+  overflow-wrap: break-word !important;
+  overflow-y: auto !important;
+  transition: border-color 0.15s !important;
+}
+
+.lk-textarea:focus {
+  border-color: #0a66c2 !important;
+  box-shadow: 0 0 0 1px #0a66c2 !important;
+}
+
+/* Action Bar */
+.lk-action-bar {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding-top: 4px !important;
+}
+
+.lk-checkbox-label {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  font-size: 12px !important;
+  color: #666666 !important;
+  cursor: pointer !important;
+}
+
+.lk-btn-primary {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  background-color: #0a66c2 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 16px !important;
+  padding: 8px 18px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: background-color 0.15s !important;
+}
+
+.lk-btn-primary:hover:not(:disabled) {
+  background-color: #004182 !important;
+}
+
+.lk-btn-primary:disabled {
+  opacity: 0.6 !important;
+  cursor: not-allowed !important;
+}
+
+.lk-spinner {
+  width: 14px !important;
+  height: 14px !important;
+  border: 2px solid rgba(255, 255, 255, 0.4) !important;
+  border-top-color: #ffffff !important;
+  border-radius: 50% !important;
+  animation: lkSpin 0.7s linear infinite !important;
+}
+
+@keyframes lkSpin {
+  to { transform: rotate(360deg); }
+}
+
+.lk-alert {
+  padding: 8px 12px !important;
+  border-radius: 6px !important;
+  font-size: 12px !important;
+}
+
+.lk-alert-error {
+  background-color: #fce8e6 !important;
+  color: #c5221f !important;
+  border: 1px solid #fad2cf !important;
+}
+
+/* Verified Signal Card */
+.lk-signal-card {
+  border-radius: 8px !important;
+  padding: 10px 14px !important;
+  margin-bottom: 12px !important;
+  border: 1px solid #d0e1fd !important;
+  background-color: #f3f8fe !important;
+}
+
+.signal-badge {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #0a66c2 !important;
+  text-transform: uppercase !important;
+  margin-bottom: 4px !important;
+}
+
+.signal-text {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: #191919 !important;
+}
+
+.signal-reason {
+  font-size: 12px !important;
+  color: #555555 !important;
+  margin-top: 4px !important;
+}
+
+/* Single Draft Card & Editable Textarea */
+.lk-result-section {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  margin-top: 4px !important;
+}
+
+.lk-variation-tabs {
+  display: flex !important;
+  gap: 8px !important;
+}
+
+.lk-variation-tab {
+  padding: 5px 12px !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+  border-radius: 12px !important;
+  border: 1px solid #cfd3d8 !important;
+  background-color: #f8fafd !important;
+  color: #555555 !important;
+  cursor: pointer !important;
+  transition: all 0.15s ease !important;
+}
+
+.lk-variation-tab:hover {
+  background-color: #edf3f8 !important;
+  border-color: #0a66c2 !important;
+  color: #0a66c2 !important;
+}
+
+.lk-variation-tab.active {
+  background-color: #0a66c2 !important;
+  border-color: #0a66c2 !important;
+  color: #ffffff !important;
+}
+
+.lk-single-draft-card {
+  border: 1px solid #cfd3d8 !important;
+  border-radius: 10px !important;
+  padding: 14px !important;
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+.lk-editable-draft-textarea {
+  width: 100% !important;
+  min-height: 120px !important;
+  box-sizing: border-box !important;
+  padding: 10px 12px !important;
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+  font-family: inherit !important;
+  color: #191919 !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 8px !important;
+  background-color: #fafbfc !important;
+  resize: vertical !important;
+  outline: none !important;
+  transition: border-color 0.15s !important;
+}
+
+.lk-editable-draft-textarea:focus {
+  border-color: #0a66c2 !important;
+  background-color: #ffffff !important;
+  box-shadow: 0 0 0 1px #0a66c2 !important;
+}
+
+/* Draft Cards */
+.lk-drafts-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+.lk-draft-card {
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 10px !important;
+  padding: 12px 14px !important;
+  background-color: #ffffff !important;
+  transition: box-shadow 0.15s !important;
+}
+
+.lk-draft-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+.draft-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin-bottom: 4px !important;
+}
+
+.draft-title-group {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.draft-title {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #191919 !important;
+}
+
+.draft-tag {
+  font-size: 11px !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  background-color: #f0f0f0 !important;
+  color: #666666 !important;
+  font-weight: 500 !important;
+}
+
+.char-badge {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  color: #777777 !important;
+}
+
+.char-safe {
+  color: #057642 !important; /* Green for within 300 chars */
+}
+
+.draft-content {
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+  color: #262626 !important;
+  white-space: pre-wrap !important;
+  background: #fbfbfb !important;
+  padding: 10px !important;
+  border-radius: 6px !important;
+  border: 1px solid #f0f0f0 !important;
+}
+
+.draft-footer {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 8px !important;
+  margin-top: 10px !important;
+}
+
+.lk-btn-secondary {
+  background: transparent !important;
+  border: 1px solid #cfd3d8 !important;
+  border-radius: 14px !important;
+  padding: 5px 12px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: #555555 !important;
+  cursor: pointer !important;
+  transition: all 0.15s !important;
+}
+
+.lk-btn-secondary:hover {
+  background-color: #f3f6f8 !important;
+}
+
+.lk-btn-insert {
+  background-color: #057642 !important; /* LinkedIn connect green */
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 14px !important;
+  padding: 5px 14px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: background-color 0.15s !important;
+}
+
+.lk-btn-insert:hover {
+  background-color: #046237 !important;
+}
+
+/* Global Floating Button always visible on LinkedIn */
+.linkedin-ai-global-floating-btn {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  z-index: 9999999 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  height: 32px !important;
+  padding: 0 13px !important;
+  background: linear-gradient(135deg, #0a66c2 0%, #004182 100%) !important;
+  color: #ffffff !important;
+  border-radius: 16px !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  box-shadow: 0 3px 12px rgba(10, 102, 194, 0.4) !important;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  user-select: none !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.linkedin-ai-global-floating-btn:hover {
+  transform: translateY(-1px) scale(1.02) !important;
+  box-shadow: 0 4px 16px rgba(10, 102, 194, 0.5) !important;
+  background: linear-gradient(135deg, #0b72d8 0%, #004b96 100%) !important;
+}
+
+.linkedin-ai-global-floating-btn:active {
+  transform: translateY(0) scale(0.98) !important;
+}
+
+.ai-floating-sparkle {
+  font-size: 13px !important;
+}
+
+.ai-floating-text {
+  letter-spacing: 0.2px !important;
+}
+

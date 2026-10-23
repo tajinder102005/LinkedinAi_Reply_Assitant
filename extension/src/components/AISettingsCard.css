@@ -1,0 +1,266 @@
+/* AI Settings Card - Light Theme matching LinkedIn Blue & Extension aesthetic */
+.ai-settings-card {
+  background: linear-gradient(180deg, #f8fafd 0%, #edf4fc 100%) !important;
+  border: 1px solid #c7ddf7 !important;
+  border-radius: 12px !important;
+  padding: 13px 15px !important;
+  box-shadow: 0 4px 16px rgba(10, 102, 194, 0.08) !important;
+  color: #191919 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+  margin-bottom: 12px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  box-sizing: border-box !important;
+}
+
+.ai-settings-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.ai-settings-title {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  letter-spacing: 0.1px !important;
+}
+
+.ai-settings-badge-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.ai-status-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  padding: 3px 9px !important;
+  border-radius: 12px !important;
+  user-select: none !important;
+}
+
+.ai-status-pill.empty {
+  background: #fef2f2 !important;
+  border: 1px solid #fecaca !important;
+  color: #dc2626 !important;
+}
+
+.ai-status-pill.saved {
+  background: #f0fdf4 !important;
+  border: 1px solid #bbf7d0 !important;
+  color: #16a34a !important;
+}
+
+.status-dot {
+  font-size: 9px !important;
+  line-height: 1 !important;
+}
+
+.ai-settings-close {
+  background: transparent !important;
+  border: none !important;
+  color: #64748b !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  transition: all 0.15s !important;
+}
+
+.ai-settings-close:hover {
+  background: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+/* Instruction Box */
+.ai-instruction-box {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 8px !important;
+  background: #ffffff !important;
+  border: 1px solid #c7ddf7 !important;
+  border-left: 3px solid #0a66c2 !important;
+  border-radius: 8px !important;
+  padding: 8px 10px !important;
+  font-size: 11.5px !important;
+  line-height: 1.45 !important;
+  color: #1e293b !important;
+}
+
+.ai-instruction-icon {
+  font-size: 13px !important;
+  line-height: 1.2 !important;
+}
+
+.ai-instruction-text strong {
+  color: #0a66c2 !important;
+  font-weight: 700 !important;
+}
+
+/* Provider Tabs */
+.ai-provider-tabs {
+  display: flex !important;
+  background: #e2edfb !important;
+  border: 1px solid #cbdff7 !important;
+  border-radius: 8px !important;
+  padding: 3px !important;
+  gap: 4px !important;
+}
+
+.ai-provider-tab {
+  flex: 1 !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 6px !important;
+  padding: 6px 0 !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+  color: #475569 !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  transition: all 0.15s ease !important;
+}
+
+.ai-provider-tab:hover {
+  color: #0a66c2 !important;
+  background: rgba(255, 255, 255, 0.6) !important;
+}
+
+.ai-provider-tab.active {
+  background: #0a66c2 !important;
+  color: #ffffff !important;
+  box-shadow: 0 1px 4px rgba(10, 102, 194, 0.3) !important;
+}
+
+/* Key Section */
+.ai-key-section {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 5px !important;
+}
+
+.ai-key-label {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #475569 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.2px !important;
+}
+
+.ai-input-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.ai-input-wrap {
+  position: relative !important;
+  flex: 1 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.ai-key-input {
+  width: 100% !important;
+  background: #ffffff !important;
+  border: 1px solid #cfd3d8 !important;
+  border-radius: 8px !important;
+  padding: 8px 32px 8px 10px !important;
+  font-size: 12px !important;
+  font-family: 'Consolas', 'Courier New', monospace !important;
+  color: #191919 !important;
+  outline: none !important;
+  box-sizing: border-box !important;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+.ai-key-input:focus {
+  border-color: #0a66c2 !important;
+  box-shadow: 0 0 0 1px #0a66c2 !important;
+}
+
+.ai-key-input::placeholder {
+  color: #94a3b8 !important;
+}
+
+.ai-eye-btn {
+  position: absolute !important;
+  right: 6px !important;
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer !important;
+  font-size: 13px !important;
+  padding: 2px 4px !important;
+  opacity: 0.6 !important;
+  transition: opacity 0.15s !important;
+}
+
+.ai-eye-btn:hover {
+  opacity: 1 !important;
+}
+
+.ai-paste-btn {
+  background: #f0f4f9 !important;
+  color: #0a66c2 !important;
+  border: 1px solid #c7ddf7 !important;
+  border-radius: 8px !important;
+  padding: 8px 12px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.15s ease !important;
+  white-space: nowrap !important;
+}
+
+.ai-paste-btn:hover {
+  background: #e0edff !important;
+  border-color: #0a66c2 !important;
+}
+
+.ai-save-btn {
+  background: linear-gradient(135deg, #0a66c2 0%, #004182 100%) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 8px 16px !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  transition: all 0.15s ease !important;
+  white-space: nowrap !important;
+  box-shadow: 0 1px 3px rgba(10, 102, 194, 0.25) !important;
+}
+
+.ai-save-btn:hover {
+  background: linear-gradient(135deg, #004182 0%, #002952 100%) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 2px 6px rgba(10, 102, 194, 0.35) !important;
+}
+
+.ai-save-btn.saved {
+  background: #16a34a !important;
+  box-shadow: 0 1px 3px rgba(22, 163, 74, 0.3) !important;
+}
+
+/* Footer Link */
+.ai-settings-footer {
+  padding-top: 1px !important;
+}
+
+.ai-helper-link {
+  font-size: 11px !important;
+  color: #0a66c2 !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  transition: all 0.15s ease !important;
+}
+
+.ai-helper-link:hover {
+  color: #004182 !important;
+  text-decoration: underline !important;
+}
